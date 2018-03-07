@@ -1,5 +1,5 @@
 /*Header style*/
-.header{
+.header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
@@ -9,7 +9,7 @@
   border-bottom: 1px solid black;
   }
 
-.logo{
+.logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,21 +17,109 @@
   padding: 5px 5px 5px 15px ;
   }
 
-.navigation{
+.navigation {
   width: 100%;
   padding-right: 30px;
 }
 
-.link{
+.link {
   list-style: none;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
 }
 
-.link li{
+.link li {
   padding: 0 10px 0 10px;
   height: 40px;
   display: flex;
   align-items: center;
+}
+/*Main Content Style*/
+
+.maincontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-basis: 1200px;
+  border: 1px solid grey;
+
+}
+
+.column.large {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 630px;
+  border: 1px solid grey;
+}
+.image.main {
+  width: 630px;
+  height: 300px;
+  background-image: url("../../resources/images/img-story-main.png");
+  background-repeat: no-repeat;
+  display: flex;
+}
+.image1 {
+  width: 630px;
+  height: 300px;
+  background-image: url("../../resources/images/img-story-2.png");
+  background-repeat: repeat;
+}
+.image1 h1, .image2 h1, .image3 h1 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+.image2 {
+  width: 630px;
+  height: 300px;
+  background-image: url("../../resources/images/img-story-3.png");
+  background-repeat: repeat;
+}
+
+.story.main h1 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  margin: 0;
+}
+.story h1 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+}
+.story p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+.article {
+  border: 1px solid grey;
+}
+
+.column.medium {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid grey;
+}
+.image3 {
+  width: 300px;
+  height: 300px;
+  background-image: url("../../resources/images/img-story-1.png");
+  background-repeat: no-repeat;
+}
+.column.small {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 240px;
+  border: 1px solid grey;
 }
